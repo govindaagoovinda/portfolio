@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash's portfolio</title>
+    <link href="https://fonts.google.com/specimen/Poppins?query=pop" rel="stylesheet">
+ <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+body{
+    background-color:rgb(0,0,33);
+    color:white;
+    font-family:'poppins',sans-serif;
+}
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:80px;
+    background-color:rgb(18,18,62);
+}
+nav ul{
+    display:flex;
+    justify-content:center;
+}
+nav ul li{
+    list-style:none;
+    margin:0 23px;
+}
+nav ul li a{
+    text-decoration:none ;
+    color:white;
+}
+nav ul li a:hover{
+    color:rgb(153,153,226);
+    font-size:1.01rem;
+}
+main hr{
+    border:0;
+    background:#9c97f1;
+    height:1.2px;
+    margin:60px 84px;
+}
+.left{
+    font-size:1.5rem;
+}
+Section{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin:130px 0;
+    
+}
+.firstSection >div{
+    width:30%;
+}
+.leftSection{
+    font-size:3rem;
+    
+}
+.rightSection img{
+    width:80%;
+    margin:50px 0;
+}
+.purple{
+    color:rgb(178,107,228);
+}
+.text-gray{
+   color:gray; 
+}
+#element{
+    color:rgb(178,107,228);
+}
+
+.Social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 0px solid rgb(131, 234, 20);
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px ;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i))
+}
+
+.Social-media a:hover {
+    background: black;
+    color: #1f242d;
+    box-shadow: 0 0 20px black;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background:#0ef;
+    border-radius: 40px;
+    box-shadow: 0 0 10px#0ef;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+/*KEYFRAMES ANIMATION*/
+
+@keyframes slideRight {
+    
+ 
+    0% {
+        transform: translatex(-100px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+ 
+ @keyframes slideLeft {
+        0% {
+            transform: translatex(-100px);
+            opacity: 0;
+    
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(-100px);
+        opacity: 1;
+
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
+
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 1;
+
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+ </style>   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prakash's portfolio</div>
+            <div class="right">
+                <ul>
+                   <a href="/"><li><a href="/">Home</a></li>
+                    <a href="/"><li><a href="/">About</a></li>
+                    <a href="/"><li><a href="/">Projects</a></li>
+                    <a href="/"><li><a href="/">Contact Me</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="firstScetion">
+        <div class="leftSection">
+            Hi, My name is <span class="purple">Jaya prakash</span>
+            <div>and I am a passionate</div>
+            
+            <span id="element"></span>
+        </div>
+        <div class="rightSection">
+            <img src="bg.png" alt=""width="400px" height="450px"
+        </div>
+            <div class="Social-media">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/yourpage" class="icon-facebook" target="_blank"><span class="fab fa-facebook-f"></span><img src="fac.png" alt=""</a>
+                    <a href="https://twitter.com/youraccount" class="icon-twitter" target="_blank"><span class="fab fa-twitter"></span><img src="twit.jpg" alt=""</a>
+                    <a href="https://www.instagram.com/rangapuram_jayaprakash/" class="icon-instagram" target="_blank"><span class="fab fa-instagram"></span><img src="inst.jpg" alt=""</a>
+                    
+                </div>
+            </div>
+            <a href="my self.pdf" class="btn">Download CV</a>
+        </div>
+        </section>
+        
+            
+       
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>"
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Traveller','Future Enterprenure'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
